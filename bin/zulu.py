@@ -3543,6 +3543,7 @@ class MainPanel(wx.Panel):
 					while y < len (self.modified_data):
 						data += self.modified_data[y]
 						y+=1
+                                        packet_data_list[x][1] = data
 				#------ Update length fields -------------------------------------------------
 				if len(self.LengthFields) > 0:
 					fuzzpoint_size = fuzz_packet_end - fuzz_packet_start + 1
